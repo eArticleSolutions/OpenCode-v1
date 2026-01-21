@@ -1,0 +1,9 @@
+name: OpenCode Agent
+on:
+  issue_comment:
+    types: [created]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: opencode-ai/opencode-github@v1
